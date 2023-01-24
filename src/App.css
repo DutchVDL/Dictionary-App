@@ -1,3 +1,9 @@
+* {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -34,5 +40,155 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+body {
+  background: linear-gradient(#2d545e, #e1b382);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 8rem;
+  width: min(70%, 120rem);
+  margin: auto;
+  height: 12rem;
+
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: #e1b382;
+  background-color: #2d545e;
+  margin-top: 4rem;
+  border-radius: 2rem;
+}
+
+.application {
+  height: 50rem;
+  background-color: #e1b382;
+  padding-top: 0.5rem;
+  width: min(90%, 150rem);
+  margin: auto;
+  margin-top: 4rem;
+  border: solid #2d545e;
+  border-radius: 20rem;
+  box-shadow: 1rem 3rem 3rem #2d545e;
+}
+
+.search {
+  height: 6rem;
+  width: 100rem;
+  font-size: 8rem;
+  margin: auto;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2d545e;
+}
+
+.search input {
+  text-align: center;
+  color: #2d545e;
+  border-radius: 3rem;
+  background-color: #e1b382;
+  border: none;
+  box-shadow: 0rem 0rem 1rem 0.2rem #2d545e;
+}
+
+.search button {
+  color: #e1b382;
+  background-color: #2d545e;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 1rem;
+  border: none;
+  margin-left: 4rem;
+  padding: 1rem 2rem;
+}
+
+.search button:hover {
+  color: #2d545e;
+  background-color: #e1b382;
+}
+
+.search button:active {
+  border: solid;
+  border-color: #2d545e;
+}
+
+.word-name {
+  font-size: 4rem;
+  background-color: #e1b382;
+  color: #2d545e;
+  width: min(70%, 80rem);
+  margin: auto;
+  height: auto;
+  min-height: 20rem;
+  padding: 0rem 2rem;
+  border-radius: 2rem;
+  box-shadow: 0rem 0rem 1rem 0.2rem #2d545e;
+}
+
+.figure-of-speech {
+  text-align: center;
+}
+
+.synonyms {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-bottom: 3rem;
+  border-bottom: solid #2d545e;
+}
+
+.definitions {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
+  margin-left: 1rem;
+  padding-bottom: 5rem;
+}
+
+.boldName {
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 70rem) {
+  .search {
+    width: min(80%, 80rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    margin-top: 7rem;
+  }
+
+  .search input {
+    width: min(80%, 80rem);
+    align-self: center;
+    font-size: 3rem;
+  }
+
+  .search button {
+    width: min(40%, 40rem);
+    align-self: auto;
+    font-size: 2rem;
+    margin-right: 4rem;
+  }
+
+  .navbar {
+    margin-top: 5rem;
+    height: min(20%, 50rem);
+    font-size: 3rem;
+  }
+
+  .boldName {
+    font-size: 2rem;
   }
 }
